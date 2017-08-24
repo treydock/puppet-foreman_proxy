@@ -17,6 +17,7 @@ class foreman_proxy::tftp {
     owner   => $foreman_proxy::user,
     mode    => '0644',
     content => template('foreman_proxy/grub.cfg.erb'),
+    replace => $foreman_proxy::tftp_replace_grub2_cfg,
   }
 
   foreman_proxy::tftp::copy_file { $foreman_proxy::tftp_syslinux_filenames:

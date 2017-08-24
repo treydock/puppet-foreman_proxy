@@ -263,6 +263,7 @@ class foreman_proxy::params {
   $tftp_manage_wget = true
   $tftp_dirs        = ["${tftp_root}/pxelinux.cfg","${tftp_root}/grub","${tftp_root}/grub2","${tftp_root}/boot","${tftp_root}/ztp.cfg","${tftp_root}/poap.cfg"]
   $tftp_servername  = undef
+  $tftp_replace_grub2_cfg = true
 
   # DHCP settings - requires optional DHCP puppet module
   $dhcp                    = false

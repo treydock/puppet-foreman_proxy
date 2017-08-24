@@ -448,6 +448,7 @@ class foreman_proxy (
   $tftp_root                  = $foreman_proxy::params::tftp_root,
   $tftp_dirs                  = $foreman_proxy::params::tftp_dirs,
   $tftp_servername            = $foreman_proxy::params::tftp_servername,
+  $tftp_replace_grub2_cfg     = $foreman_proxy::params::tftp_replace_grub2_cfg,
   $dhcp                       = $foreman_proxy::params::dhcp,
   $dhcp_listen_on             = $foreman_proxy::params::dhcp_listen_on,
   $dhcp_managed               = $foreman_proxy::params::dhcp_managed,
